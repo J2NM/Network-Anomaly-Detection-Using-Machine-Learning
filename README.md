@@ -4,6 +4,7 @@ This project will focus on detecting abnormal patterns in network traffic that m
 # introduction
 
 Project structure
+```
 AI-Final-Project
 │
 ├── README.md
@@ -29,3 +30,6 @@ AI-Final-Project
 │
 └── report
     └── final_report.pdf
+```
+
+	
