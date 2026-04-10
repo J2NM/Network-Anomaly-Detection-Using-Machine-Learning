@@ -103,3 +103,26 @@ Network Anomaly Detection AAI-501 Final project
 This project developed supervised learning models to detect anomalous network behavior using the Kaggle Network Anomaly dataset. The dataset did not contain explicit timestamps, so we could not use a standard time-series approach. Instead, we ran a row-to-row difference analysis during exploratory data analysis and found that changes between adjacent observations were small and stable (mean difference near zero, standard deviation approximately 0.07). This allowed us to treat the row index as a temporal proxy. We then applied time-aware feature engineering by generating lagged variables, rolling statistics, and normalized deviation metrics (delta and z-score). These additions expanded the feature space from 5 to 29 columns while preventing data leakage.
 	We evaluated two classifiers: Logistic Regression and Gradient Boosting (n_estimators = 150, learning_rate = 0.05, max_depth = 3). The initial single stratified train/test split produced perfect performance for Gradient Boosting, which led us to also run Stratified K-Fold Cross Validation (k=5) with out-of-fold predictions. Gradient Boosting maintained exceptional performance (Accuracy 0.9958 ± 0.0041) compared with Logistic Regression (Accuracy 0.9709 ± 0.0101). The engineered features proved critical to improving both the single-split and K-Fold model performance, demonstrating that sequential structure can be extracted from non-temporal data and used for anomaly detection in network traffic.
 
+### LICENSE
+
+MIT License
+
+Copyright (c) 2026 J2NM
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
