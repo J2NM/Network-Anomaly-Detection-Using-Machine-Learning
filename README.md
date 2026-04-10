@@ -1,7 +1,9 @@
 # Network Anomaly Detection Using Machine Learning
 
 ## About this project
+This project is a part of the AAI-501 course in the Applied Artificial Intelligence Program at theUniversity of San Diego (USD).
 This project will focus on detecting abnormal patterns in network traffic that may indicate cybersecurity threats. The goal will be to classify network activity as normal or anomalous using machine learning techniques. 
+-- Project Status: [Completed]
 
 ### Team Members
 
