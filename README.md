@@ -29,40 +29,50 @@ The dataset contains 1,654 records with five columns: inbound rate, outbound rat
 - Service type
 - Connection status flag
 
+## Installation
+```
+To use this project, first clone the repo.
+
+git init
+
+gh repo clone J2NM/Network-Anomaly-Detection-Using-Machine-Learning
+```
+
 ## Project structure
 ```
 Network Anomaly Detection AAI-501 Final project
 │
 ├── README.md
 ├── requirements.txt
+│── network_anomaly_dataset.csv
 │
-├── data
-│   ├── raw
-│   │   └── network_anomaly_dataset.csv
-│   │
-│   └── processed
-│       └── cleaned_network_data.csv
+├── notebook
+│   ├── AAI501_Final_Project_Network_Anomaly_Detection_Using_Machine_Learning.ipynb
 │
-├── notebooks
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_data_preprocessing.ipynb
-│   └── 03_model_experiments.ipynb
-│
-├── src
-│   ├── data_preprocessing.py
-│   ├── feature_engineering.py
-│   ├── classification_models.py
-│   ├── clustering_models.py
-│   └── evaluation_metrics.py
+├── Table of contents
+│   ├── 1. Introduction
+│   ├── 2. Dataset Description
+│   ├── 3. Data Cleaning & Preprocessing
+│   ├── 4. Exploratory Data Analysis (EDA)
+│   ├── 5. Feature Engineering: Time-Aware Approximation Without Explicit Timestamps
+│   ├── 5.1. Validation of Sequential Assumption
+│   ├── 6. Time-Series Analysis
+│   ├── 7. Model training
+│   ├── 7.1. Train/Test Split
+│   ├── 7.2. Logistic Regression Model
+│   ├── 7.3. Gradient Boosting Model
+│   ├── 7.4. Side-by-Side Model Comparison
+│   ├── 7.5. Confusion Matrix Visualization
+│   ├── 7.5.1 Confusion Matrix Visualization Using Stratified K-Fold Cross-Validation
+│   ├── 7.5.2. Single-Split vs. Stratified K-Fold Out-Of-Fold Predictions
+│   ├── 7.6. ROC Curve Comparison
+│   ├── 7.6.1. ROC Curve Comparison (Single Split)
+│   ├── 7.6.2. ROC Curve Comparison (Stratified K-Fold)
 │
 ├── figures
 │   ├── feature_distributions.png
 │   ├── correlation_matrix.png
 │   └── model_performance.png
-│
-├── results
-│   ├── model_results.csv
-│   └── confusion_matrix.png
 │
 ├── presentation
 │   └── final_project_slides.pptx
