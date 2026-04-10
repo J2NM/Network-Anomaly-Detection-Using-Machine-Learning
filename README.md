@@ -70,9 +70,15 @@ Network Anomaly Detection AAI-501 Final project
 │   ├── 7.6.2. ROC Curve Comparison (Stratified K-Fold)
 │
 ├── figures
-│   ├── feature_distributions.png
-│   ├── correlation_matrix.png
-│   └── model_performance.png
+│   ├──Confusion matrix 1 fold.png
+│   ├──Confusion matrix K-fold.png
+│   ├──Deviation from local baseline.png
+│   ├──Feature engineering effect-inbound traffic.png
+│   ├──Plots 1.png
+│   ├──ROC K-fold.png
+│   ├──ROC Single split.png
+│   ├──Time series analisys.png
+│   ├──correlation matrix.png
 │
 ├── presentation
 │   └── final_project_slides.pptx
